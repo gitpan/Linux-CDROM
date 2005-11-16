@@ -1,3 +1,6 @@
+package Linux::CDROM::Cookbook;
+1;
+
 =pod
 
 =head1 NAME

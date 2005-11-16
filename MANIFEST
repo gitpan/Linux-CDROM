@@ -9,5 +9,5 @@ t/Linux-CDROM.t
 fallback/const-c.inc
 fallback/const-xs.inc
 lib/Linux/CDROM.pm
-lib/Linux/CDROM/Cookbook.pod
+lib/Linux/CDROM/Cookbook.pm
 META.yml                                 Module meta-data (added by MakeMaker)

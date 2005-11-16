@@ -330,7 +330,7 @@ our @EXPORT = qw(
     EDRIVE_CANT_DO_THIS
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
@@ -1400,7 +1400,7 @@ I strongly doubt you will need them.
 
 This one most definitely only works for Linux so far.
 
-Since I am lacking a DVD-drive, all the DVD-related controls are unimplemented.
+All the DVD-related controls are unimplemented.
 
 Other unimplemented ioctls are:
 
@@ -1435,7 +1435,7 @@ Tassilo von Parseval, E<lt>tassilo.von.parseval@rwth-aachen.deE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2004 by Tassilo von Parseval
+Copyright (C) 2004-2005 by Tassilo von Parseval
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.2 or,

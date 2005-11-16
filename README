@@ -1,4 +1,4 @@
-Linux-CDROM version 0.01
+Linux-CDROM version 0.02
 =========================
 
 This module gives you access to your CDROM (and possibly DVD) drives on
@@ -25,7 +25,7 @@ Tassilo von Parseval, tassilo.von.parseval@rwth-aachen.de
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2004 by Tassilo von Parseval
+Copyright (C) 2004-2005 by Tassilo von Parseval
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.2 or,

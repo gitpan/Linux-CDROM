@@ -603,7 +603,7 @@ read1 (self, addr)
         struct cdrom_msf *data;
     CODE:
     {
-        New(0, (char*)data, CD_FRAMESIZE, char);
+        New(0, data, CD_FRAMESIZE, char);
 
         lba_to_msf(addr->addr.lba, &data->cdmsf_min0, &data->cdmsf_sec0, &data->cdmsf_frame0);
 
@@ -625,7 +625,7 @@ read2 (self, addr)
         struct cdrom_msf *data;
     CODE:
     {
-        New(0, (char*)data, CD_FRAMESIZE_RAW0, char);
+        New(0, data, CD_FRAMESIZE_RAW0, char);
 
         lba_to_msf(addr->addr.lba, &data->cdmsf_min0, &data->cdmsf_sec0, &data->cdmsf_frame0);
 
@@ -683,7 +683,7 @@ read_audio (self, addr, nframes)
         XSRETURN(1);
     }
 
- #if 0
+#if 0
 void
 read_cooked (self, lba)
         CDROM *self;
@@ -705,7 +705,8 @@ read_cooked (self, lba)
         sv_usepvn(ST(0), (char*)data, CD_FRAMESIZE);
         XSRETURN(1);
     }
- #endif
+
+#endif
 
 void
 read_raw (self, addr)
@@ -715,7 +716,7 @@ read_raw (self, addr)
         struct cdrom_msf *data;
     CODE:
     {
-        New(0, (char*)data, CD_FRAMESIZE_RAW, char);
+        New(0, data, CD_FRAMESIZE_RAW, char);
 
         lba_to_msf(addr->addr.lba, &data->cdmsf_min0, &data->cdmsf_sec0, &data->cdmsf_frame0);
 
